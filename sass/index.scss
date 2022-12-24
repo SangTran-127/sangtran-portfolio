@@ -1,0 +1,30 @@
+$primary-color: #005691;
+$primary-yellow: #ffd700;
+$primary-gray: #8d8d8d;
+$mobile-width: 600px;
+$tablet-width: 900px;
+
+@mixin desktop {
+    @media only screen and (min-width: $mobile-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+@import "animate.css";
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import "./components/herosection";
+@import "./components/animatedletter";
+@import "./components/blogdetail"; // h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     color: $primary-yellow;
+// }

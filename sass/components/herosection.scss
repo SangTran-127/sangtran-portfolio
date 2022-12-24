@@ -1,0 +1,88 @@
+.hero-container {
+    will-change: contents;
+    min-height: 566px;
+    position: relative;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+
+    .text-zone {
+        position: relative;
+        @include tablet {
+            text-align: left;
+        }
+    }
+    h1 {
+        color: #f8f8f2;
+        position: relative;
+        font-size: 3rem;
+        margin: 0;
+        font-weight: bold;
+        @include desktop {
+            font-size: 4rem;
+        }
+        &::before,
+        &::after {
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            opacity: 0.6;
+            color: #bd93f9;
+            font-family: "La Belle Aurore";
+            @include tablet {
+                text-align: left;
+            }
+        }
+        &::before {
+            content: "<title id='intro'>";
+        }
+        &::after {
+            content: "</title>";
+            animation: fadeIn 1s 1.7s backwards;
+        }
+    }
+    .logo-img {
+        width: 30px;
+        height: 100%;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+        display: inline-block;
+    }
+
+    h2 {
+        letter-spacing: 2px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+}
+
+.contact-button {
+    background-color: #50fa7b;
+    color: "#333";
+    letter-spacing: 2px;
+    color: #282a36;
+    padding: 0.5rem;
+    font-weight: bold;
+    // white-space: nowrap;
+    border-radius: 5px;
+
+    &:hover {
+        animation: wobble;
+        animation-duration: 2s;
+    }
+}
+
+.text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: #bd93f9;
+    }
+}

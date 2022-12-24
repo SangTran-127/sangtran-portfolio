@@ -1,11 +1,14 @@
+
+import HeroSection from '@/components/home/HeroSection'
 import React from 'react'
 
-type Props = {}
 
-const page = (props: Props) => {
+const HomePage = () => {
     return (
-        <div>xxxxx</div>
+        <div>
+            <HeroSection />
+        </div>
     )
 }
 
-export default page
+export default HomePage

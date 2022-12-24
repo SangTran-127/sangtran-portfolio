@@ -42,11 +42,8 @@ const HeaderMobile = () => {
     const containerRef = useRef(null);
     const { height } = useDimensions(containerRef);
     const pathname = usePathname()
-
-
     return (
-        // ='visible md:invisible h-20'
-        <div className="">
+        <div className="md:hidden">
             <div className=''>
                 <motion.nav
                     initial={false}
@@ -55,7 +52,7 @@ const HeaderMobile = () => {
                     ref={containerRef}
                     className="motion-nav"
                 >
-                    <motion.div className="nav-mobile-background bg-dracula-darker" variants={sidebar} />
+                    <motion.div className="nav-mobile-background bg-dracula-purple" variants={sidebar} />
                     <motion.ul variants={variants} className="mobile-nav-ul">
                         {ROUTE_LIST.map(({ path, label }) => (
                             <motion.li

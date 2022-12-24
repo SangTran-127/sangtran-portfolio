@@ -4,9 +4,9 @@ import HeaderDesktop from './HeaderDesktop'
 
 const Header = () => {
     return (
-        <header className="bg-dracula-darker">
+        <header className="bg-dracula-darker-900 h-20" >
             <HeaderMobile />
-            {/* <HeaderDesktop /> */}
+            <HeaderDesktop />
         </header>
     )
 }
