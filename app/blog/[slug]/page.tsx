@@ -15,10 +15,12 @@ import rehypeFormat from 'rehype-format'
 import rehypeSlug from 'rehype-slug'
 import rehypeStringify from 'rehype-stringify/lib'
 import remarkParse from 'remark-parse/lib'
-import remarkPrism from 'remark-prism'
 import remarkRehype from 'remark-rehype'
 import remarkToc from 'remark-toc'
 import { unified } from 'unified'
+import remarkPrism from 'remark-prism'
+
+
 interface PageParams {
     slug: string;
 };
@@ -33,7 +35,7 @@ export default async function BlogDetail({ params }: PageProps) {
 
     const { slug } = params
     const post = await getBlog(slug)
-    // console.log(post);
+
 
     return (
         <div className='mt-3'>
@@ -90,11 +92,13 @@ async function getBlog(slug: string): Promise<Post> {
     if (!thisSlug || !thisPost) {
         notFound()
     }
+
+
     // chuyen tu MD sang HTMl
     const file = await unified()
         .use(remarkParse)
         .use(remarkToc, { heading: 'Mục lục' })
-        // .use(remarkPrism)
+        .use(remarkPrism)
         .use(remarkRehype)
         .use(rehypeSlug)
         .use(rehypeAutolinkHeadings, { behavior: 'wrap' })
@@ -102,6 +106,7 @@ async function getBlog(slug: string): Promise<Post> {
         .use(rehypeFormat)
         .use(rehypeStringify)
         .process(thisPost.mdContent || '') || unified
+
     thisPost.htmlContent = file.toString()
     return thisPost
 

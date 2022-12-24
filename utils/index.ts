@@ -4,7 +4,6 @@ import fs from "fs";
 import matter from "gray-matter";
 import { Post } from "@/models";
 const BLOG_FOLDER = path.join(process.cwd(), "blogs_store");
-
 export async function getBlogList(): Promise<Post[]> {
   const filenameList = fs.readdirSync(BLOG_FOLDER);
   const postList: Post[] = [];

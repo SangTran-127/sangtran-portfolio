@@ -4,7 +4,7 @@ title: Bí kíp cho buổi phỏng vấn ReactJS thành công 🎉
 author: Hậu Nguyễn
 author_title: Senior Software Engineer at fram^
 author_url: https://github.com/paulnguyen-mn
-author_image_url: https://avatars3.githubusercontent.com/u/31444102?s=400&u=c545a527aa31843e1361462e410c0f51863e8e26&v=4
+author_image_url: https://avatars.githubusercontent.com/SangTran-127
 image: https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80
 tags: [reactjs, phỏng vấn reactjs]
 date: "2022-11-26"

@@ -8,7 +8,6 @@ import PostItem from '@/components/blog/PostItem'
 // import { Seo } from '@/components/common'
 
 
-
 async function getBlogAPI() {
     const blogList = await getBlogList();
     return blogList
@@ -16,6 +15,7 @@ async function getBlogAPI() {
 
 export default async function BlogPage() {
     const blogList = await getBlogAPI()
+
     return (
         <div className='text-dracula-light'>
             {/* <Seo data={{
