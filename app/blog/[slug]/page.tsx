@@ -1,9 +1,6 @@
-// import { Seo } from '@/components/common'
-// import { MainLayout } from '@/components/layout'
+
 import { Post } from '@/models'
 import { getBlogList } from '@/utils'
-// import { Box, Container, Typography } from '@mui/material'
-// import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next'
 import Script from 'next/script'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -19,7 +16,7 @@ import remarkRehype from 'remark-rehype'
 import remarkToc from 'remark-toc'
 import { unified } from 'unified'
 import remarkPrism from 'remark-prism'
-
+import Container from '@/components/layout/Container'
 
 interface PageParams {
     slug: string;
@@ -36,11 +33,18 @@ export default async function BlogDetail({ params }: PageProps) {
     const { slug } = params
     const post = await getBlog(slug)
 
-
     return (
         <div className='mt-3'>
-            <div className='w-full container mx-auto md:px-20 lg:px-40 xl:px-60 2xl:px-80 px-5'>
+            <Container tailWindClass='w-full md:px-20 lg:px-40 xl:px-60 2xl:px-80 px-5'>
+                <>
                 <h1 className='text-dracula-orange text-4xl'>{post.title}</h1>
+                <div className='flex gap-2 mt-3'>
+                    {post.tagList.map((tag) => (
+                        <p key={tag} className='bg-dracula-dark-800 hover:bg-dracula-dark-400  text-dracula-light text-xs font-semibold mr-2 px-2.5 py-0.5 rounded'>
+                            {tag}
+                        </p>
+                    ))}
+                </div>
                 <div className='flex items-center mt-3'>
                     <Link href={post.author?.profileUrl || '#'}>
                         <div className='flex items-center gap-2'>
@@ -53,28 +57,12 @@ export default async function BlogDetail({ params }: PageProps) {
                 </div>
                 <div className='prose prose-strong:text-dracula-green prose-a:text-dracula-orange prose-code:text-dracula-purple prose-li:text-dracula-light prose-li::marker:text-color-purple' dangerouslySetInnerHTML={{ __html: post.htmlContent || '' }}>
                 </div>
-            </div>
+                </>
+            </Container>
             <Script src='/prism.js' strategy='afterInteractive'></Script>
         </div>
     )
 }
-
-
-// export const getStaticPaths: GetStaticPaths = async () => {
-//     const postList = await getBlogList();
-//     return {
-//         paths: postList.map((post: Post) => ({ params: { slug: post.slug } })),
-//         fallback: false
-//     }
-// }
-{/* <Seo data={{
-                title: `${post.title} | Sang's Blog`,
-                description: post.description,
-                thumbnailUrl: post.thumbnailUrl || '',
-                url: `${process.env.HOST_URL}/blog/${post.slug}` || ''
-            }} /> */}
-
-
 
 
 // getStaticPaths
@@ -98,7 +86,7 @@ async function getBlog(slug: string): Promise<Post> {
     const file = await unified()
         .use(remarkParse)
         .use(remarkToc, { heading: 'Mục lục' })
-        .use(remarkPrism)
+        // .use(remarkPrism)
         .use(remarkRehype)
         .use(rehypeSlug)
         .use(rehypeAutolinkHeadings, { behavior: 'wrap' })

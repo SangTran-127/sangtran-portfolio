@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { getBlogList } from '@/utils'
-import { Post } from '@/models'
+import Container from '@/components/layout/Container'
 import Link from 'next/link'
 import PostItem from '@/components/blog/PostItem'
 // import { Seo } from '@/components/common'
@@ -24,23 +24,20 @@ export default async function BlogPage() {
                 thumbnailUrl: '',
                 url: `${process.env.HOST_URL}/blog` || ''
             }} /> */}
-            <div>
-                <h3>Blog</h3>
-                <ul>
-                    {
-                        blogList.map((blog) => (
-                            <li key={blog.id}>
-                                <Link href={`/blog/${blog.slug}`} legacyBehavior>
-                                    <a>
-                                        <PostItem post={blog} />
-                                    </a>
-                                </Link>
-                                <br />
-                            </li>
-                        ))
-                    }
-                </ul>
-            </div>
+            <Container tailWindClass='md:px-20 lg:px-40 xl:px-60 2xl:px-80 px-5'>
+                <>
+                    <h1 className='text-center text-3xl my-3'>Blog</h1>
+                    <div className='flex flex-col gap-3'>
+                        {
+                            blogList.map((blog) => (
+                                <div key={blog.id}>
+                                    <PostItem post={blog} />
+                                </div>
+                            ))
+                        }
+                    </div>
+                </>
+            </Container>
         </div>
     )
 }
