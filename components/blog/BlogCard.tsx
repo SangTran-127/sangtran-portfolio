@@ -3,7 +3,7 @@ import React from 'react'
 
 interface BlogCardProps {
     blog: Post
-    lastest: boolean
+    lastest?: boolean
 }
 
 export default function BlogCard ({blog}: BlogCardProps) {
