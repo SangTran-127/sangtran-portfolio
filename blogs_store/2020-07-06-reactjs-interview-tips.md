@@ -1,6 +1,6 @@
 ---
 slug: specifying-the-rows-in-a-grid
-title: Specifying the rows in a grid 🎉
+title: Specifying the rows in a grid cơ bản cho người mới bắt đầu 2020🎉
 author: Hậu Nguyễn
 author_title: Senior Software Engineer at fram^
 author_url: https://github.com/paulnguyen-mn
