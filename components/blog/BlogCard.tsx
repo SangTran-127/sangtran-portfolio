@@ -12,8 +12,8 @@ export default function BlogCard({ blog, lastest }: BlogCardProps) {
   return (
     <div
       className={`flex ${
-        lastest ? "flex-col h-full" : "gap-4"
-      } gap-4 w-full py-2`}
+        lastest ? "flex-col h-full border rounded-lg px-3 py-3" : ""
+      } gap-4 w-full `}
     >
       <div className={`${lastest ? "" : "w-5/12"}`}>
         <Image
@@ -37,7 +37,7 @@ export default function BlogCard({ blog, lastest }: BlogCardProps) {
           ))}
         </div>
         <Link href={`/blog/${blog.slug}`} legacyBehavior>
-          <h5 className="text-lg mt-3 font-semibold text-dracula-orange cursor-pointer">
+          <h5 className="text-lg line-clamp-2 mt-3 font-semibold text-dracula-orange cursor-pointer">
             {blog.title}
           </h5>
         </Link>

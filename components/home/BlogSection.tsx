@@ -2,7 +2,7 @@ import React from "react";
 import { getBlogList } from "@/utils";
 import Container from "../layout/Container";
 import BlogCard from "../blog/BlogCard";
-
+import Link from "next/link";
 interface BlogSectionProps {}
 
 export default async function BlogSection(props: BlogSectionProps) {
@@ -21,16 +21,18 @@ export default async function BlogSection(props: BlogSectionProps) {
   return (
     <Container tailWindClass="max-w-screen-lg mx-auto px-3">
       <>
-        <h1 className="text-dracula-light text-center text-3xl">
-          Stories & Blog
-        </h1>
+        <Link href={`/blog`} legacyBehavior>
+          <h1 className="text-dracula-light hover:text-dracula-orange text-center text-3xl cursor-pointer">
+            Stories & Blog
+          </h1>
+        </Link>
         <p className="text-dracula-dark-300 text-center">The lastest blog</p>
-        <div className="grid grid-cols-2 grid-rows-2 gap-3">
+        <div className="grid md:grid-cols-2 md:grid-rows-2 gap-3 mt-3">
           <div>
             <BlogCard blog={lastestBlog} lastest={true} />
           </div>
 
-          <div>
+          <div className="flex flex-col justify-between">
             {restBlog.map((blog) => (
               <div key={blog.title}>
                 <BlogCard blog={blog} />
