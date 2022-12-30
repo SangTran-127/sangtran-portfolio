@@ -27,5 +27,6 @@ module.exports = {
   plugins: [
     require("tailwind-dracula")("dracula", true),
     require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
   ],
 };

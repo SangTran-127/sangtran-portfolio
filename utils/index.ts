@@ -3,7 +3,20 @@ import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
 import { Post } from "@/models";
+
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeDocument from "rehype-document";
+import rehypeFormat from "rehype-format";
+import rehypeSlug from "rehype-slug";
+import rehypeStringify from "rehype-stringify/lib";
+import remarkParse from "remark-parse/lib";
+import remarkRehype from "remark-rehype";
+import remarkToc from "remark-toc";
+import { unified } from "unified";
+import remarkPrism from "remark-prism";
+
 const BLOG_FOLDER = path.join(process.cwd(), "blogs_store");
+
 export async function getBlogList(): Promise<Post[]> {
   const filenameList = fs.readdirSync(BLOG_FOLDER);
   const postList: Post[] = [];
@@ -31,4 +44,19 @@ export async function getBlogList(): Promise<Post[]> {
     });
   }
   return postList;
+}
+export async function getMDToHTML(mdContent: string) {
+  const file =
+    (await unified()
+      .use(remarkParse)
+      .use(remarkToc, { heading: "Mục lục" })
+      // .use(remarkPrism)
+      .use(remarkRehype)
+      .use(rehypeSlug)
+      .use(rehypeAutolinkHeadings, { behavior: "wrap" })
+      .use(rehypeDocument, { title: "some ting wong" })
+      .use(rehypeFormat)
+      .use(rehypeStringify)
+      .process(mdContent)) || unified;
+  return file.toString();
 }
