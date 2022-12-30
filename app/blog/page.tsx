@@ -1,7 +1,6 @@
 import React from "react";
 import { getBlogList } from "@/utils";
 import Container from "@/components/layout/Container";
-import Link from "next/link";
 import PostItem from "@/components/blog/PostItem";
 // import { Seo } from '@/components/common'
 

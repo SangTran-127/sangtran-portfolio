@@ -46,6 +46,7 @@ export async function getBlogList(): Promise<Post[]> {
   return postList;
 }
 export async function getMDToHTML(mdContent: string) {
+  console.log(remarkPrism.toString());
   const file =
     (await unified()
       .use(remarkParse)
