@@ -46,12 +46,10 @@ export async function getBlogList(): Promise<Post[]> {
   return postList;
 }
 export async function getMDToHTML(mdContent: string) {
-  // console.log(remarkPrism.toString());
   const file =
     (await unified()
       .use(remarkParse)
       .use(remarkToc, { heading: "Mục lục" })
-      // .use(remarkPrism)
       .use(remarkRehype)
       .use(rehypeSlug)
       .use(rehypeAutolinkHeadings, { behavior: "wrap" })
@@ -60,6 +58,6 @@ export async function getMDToHTML(mdContent: string) {
       .use(rehypeHighlight)
       .use(rehypeStringify)
       .process(mdContent)) || unified;
-  // const finalFileHTML = hljs.highlightAuto(file.toString()).value;
+
   return file.toString();
 }
