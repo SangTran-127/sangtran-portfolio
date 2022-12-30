@@ -98,7 +98,7 @@ async function getBlog(slug: string): Promise<Post> {
     const file = await unified()
         .use(remarkParse)
         .use(remarkToc, { heading: 'Mục lục' })
-        .use(remarkPrism)
+        // .use(remarkPrism)
         .use(remarkRehype)
         .use(rehypeSlug)
         .use(rehypeAutolinkHeadings, { behavior: 'wrap' })

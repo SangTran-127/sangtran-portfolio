@@ -1,8 +1,8 @@
 import Header from "@/components/header";
 import { Be_Vietnam_Pro } from '@next/font/google'
-import "./global.css"
+import "@/styles/global.css"
 import "@/sass/index.scss"
-import "./prism.css"
+import "@/styles/prism.css"
 const vietnamese = Be_Vietnam_Pro({
     weight: ['400', '700'],
     subsets: ["vietnamese"]
