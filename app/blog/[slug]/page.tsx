@@ -67,7 +67,7 @@ export default async function BlogDetail({ params }: PageProps) {
           ></div>
         </div>
       </Container>
-      <Script src="/prism.js" strategy="afterInteractive"></Script>
+      {/* <Script src="/prism.js" strategy="afterInteractive"></Script> */}
     </div>
   );
 }
@@ -89,5 +89,6 @@ async function getBlog(slug: string): Promise<Post> {
   }
   // chuyen tu MD sang HTMl
   thisPost.htmlContent = await getMDToHTML(thisPost.mdContent || "");
+  console.log(thisPost.htmlContent);
   return thisPost;
 }
