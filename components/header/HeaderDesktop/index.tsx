@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 import logo from "@/assests/images/ide.png";
 const HeaderDesktop = () => {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <div className="md:block hidden py-2">
       <div className="container mx-auto max-w-screen-lg px-20">
