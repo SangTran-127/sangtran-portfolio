@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={vietnamese.className}>
-      <body className="bg-dracula-aro">
+      <body className="bg-dracula-aro min-h-screen">
         <Header />
-        {children}
+        <>{children}</>
       </body>
     </html>
   );
