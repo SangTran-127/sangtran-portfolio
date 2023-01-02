@@ -7,7 +7,9 @@ const HomePage = () => {
   return (
     <div>
       <HeroSection />
-      <Suspense fallback={<Loading />}>
+      <Suspense
+        fallback={<div className="text-dracula-light">Loading ...</div>}
+      >
         {/* @ts-expect-error */}
         <BlogSection />
       </Suspense>
