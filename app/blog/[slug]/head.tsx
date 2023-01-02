@@ -14,7 +14,7 @@ const Head = async ({ params }: HeaderProps) => {
       <title>{blog?.title}</title>
       <meta name="title" content={blog?.title} />
       <meta name="description" content={blog?.description} />
-
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       {/* <!-- Open Graph / Facebook --> */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={`${process.env.WEB_URL}/blog` || ""} />
