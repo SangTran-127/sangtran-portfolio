@@ -13,7 +13,7 @@ export default function BlogCard({ blog, lastest }: BlogCardProps) {
     <div
       className={`flex ${
         lastest ? "flex-col h-full border rounded-lg px-3 py-3" : ""
-      } gap-4 w-full `}
+      } gap-3 w-full `}
     >
       <div className={`${lastest ? "" : "w-5/12"}`}>
         <Image
@@ -37,14 +37,20 @@ export default function BlogCard({ blog, lastest }: BlogCardProps) {
           ))}
         </div>
         <Link href={`/blog/${blog.slug}`} legacyBehavior>
-          <h5 className="text-lg line-clamp-2 mt-3 font-semibold text-dracula-orange cursor-pointer">
+          <h5
+            className={`line-clamp-2 font-semibold text-dracula-orange cursor-pointer ${
+              lastest
+                ? "text-md mt-3"
+                : "text-xs md:text-lg lg:text-xl mt-1 md:mt-2"
+            }`}
+          >
             {blog.title}
           </h5>
         </Link>
-        <div className="mt-3">
+        <div className={`${lastest ? "mt-3" : "mt-2 md:mt-3"}`}>
           <div>
             <Link href={blog.author?.profileUrl || "#"}>
-              <div className="flex items-center gap-3">
+              <div className={`flex items-center gap-3`}>
                 <Image
                   className="inline-block rounded-full"
                   src={blog.author?.avatarUrl || ""}
@@ -52,11 +58,11 @@ export default function BlogCard({ blog, lastest }: BlogCardProps) {
                   width={30}
                   height={30}
                 />
-                <div>
-                  <p className="text-dracula-purple text-md">
+                <div className="">
+                  <p className="text-dracula-purple text-xs md:text-base">
                     {blog.author?.name}
                   </p>
-                  <p className="text-sm text-dracula-green">
+                  <p className="text-xs md:text-sm text-dracula-green">
                     {blog.publishedDate}
                   </p>
                 </div>

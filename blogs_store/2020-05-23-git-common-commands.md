@@ -6,7 +6,7 @@ author_title: Senior Software Engineer at fram^
 author_url: https://github.com/SangTran-127
 author_image_url: https://avatars.githubusercontent.com/SangTran-127
 image: https://images.unsplash.com/5/unsplash-kitsune-4.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9&s=50827fd8476bfdffe6e04bc9ae0b8c02
-tags: [git, git trong dự án thực tế]
+tags: [git, gitflow]
 date: "2022-11-27"
 ---
 

@@ -20,14 +20,6 @@ export default async function BlogDetail({ params }: PageProps) {
 
   return (
     <>
-      <Seo
-        data={{
-          title: `${post.title} | Sang's Blog`,
-          description: post.description,
-          thumbnailUrl: post.thumbnailUrl || "",
-          url: `${process.env.WEB_URL}/blog/${post.slug}` || "",
-        }}
-      />
       <div className="mt-3">
         <Container tailWindClass="w-full md:px-20 lg:px-40 xl:px-60 2xl:px-80 px-5">
           <div>
