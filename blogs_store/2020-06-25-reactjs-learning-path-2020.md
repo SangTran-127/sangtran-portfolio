@@ -82,7 +82,7 @@ Giờ học code ReactJS thôi hehe 😎
 - Đây là một nội dung OPTIONAL. Không có Type Checking, code của bạn vẫn chạy được bình thường.
 - Thỉnh thoảng bạn thấy code như vầy:
 
-```js[class="line-numbers"]
+```js
 import PropTypes from "prop-types";
 
 function Item() {
@@ -156,7 +156,7 @@ Một số điều bạn cần lưu ý khi làm việc với routing:
 - Thường các file api sẽ được đặt trong 1 folder tên là `api`
 - Lựa chọn 1 http client: thường là `axios`, còn trường hợp project nhỏ, đơn giản thì có thể dùng `fetch` cũng được. Fetch tiện cái là `ko cần cài thêm thư viện`. Còn axios thì phải cài thêm package `axios` nhen.
 
-```
+```sh
 api
 |__ axiosClient.js hoặc fetchClient.js: config http client và cung cấp các phương thức get, post, put, ...
 |__ productApi.js
