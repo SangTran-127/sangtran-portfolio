@@ -7,16 +7,11 @@ interface BlogSectionProps {}
 
 export default async function BlogSection(props: BlogSectionProps) {
   const blogList = await getBlogList();
-  // get lastest day
   const sectionList = blogList.sort(
     (prevBlog, currentBlog) =>
       new Date(currentBlog.publishedDate).getTime() -
       new Date(prevBlog.publishedDate).getTime()
   );
-
-  sectionList.forEach((b) => {
-    console.log(b.publishedDate);
-  });
   const [lastestBlog, ...restBlog] = sectionList;
   return (
     <Container tailWindClass="max-w-screen-lg mx-auto px-3">
@@ -32,9 +27,9 @@ export default async function BlogSection(props: BlogSectionProps) {
             <BlogCard blog={lastestBlog} lastest={true} />
           </div>
 
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-around gap-3 md:gap-0">
             {restBlog.map((blog) => (
-              <div key={blog.title}>
+              <div key={blog.title} className="">
                 <BlogCard blog={blog} />
               </div>
             ))}

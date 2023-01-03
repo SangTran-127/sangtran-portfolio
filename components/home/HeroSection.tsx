@@ -31,7 +31,7 @@ const HeroSection = () => {
     popupLetters();
   }, []);
   return (
-    <section className="xs:pt-4 md:pt-18">
+    <section className="pt-4 md:px-16 py-16">
       <Container tailWindClass="max-w-screen-lg md:px-20 mx-auto hero-container md:flex md:justify-between md:items-center px-3">
         <>
           <div className="text-zone text-center min-w-max">

@@ -61,3 +61,8 @@ export async function getMDToHTML(mdContent: string) {
 
   return file.toString();
 }
+
+export async function getBlogBySlug(slug: string): Promise<Post | undefined> {
+  const blogList = await getBlogList();
+  return blogList.find((blog) => blog.slug === slug);
+}
