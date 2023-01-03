@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Container from "@/components/layout/Container";
-import { Seo } from "@/components";
 interface PageParams {
   slug: string;
 }

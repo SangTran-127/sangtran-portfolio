@@ -1,154 +1,37 @@
 ---
-slug: bi-kip-phong-van-reactjs-thanh-cong
-title: Bí kíp cho buổi phỏng vấn ReactJS thành công 🎉
-author: Hậu Nguyễn
-author_title: Senior Software Engineer at fram^
-author_url: https://github.com/paulnguyen-mn
+slug: lorem-ipsum-003
+title: Lorem Ipsum is simply dummy text of the printing and typesetting industry 🥰
+author: Sáng Trần
+author_title: Regular guy who love programming
+author_url: https://github.com/SangTran-127
 author_image_url: https://avatars.githubusercontent.com/SangTran-127
 image: https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80
-tags: [reactjs, interview]
-date: "2022-11-26"
+tags: [reactjs, roadmap]
+date: "2022-11-28"
 ---
 
-Chắc hẳn nhiều bạn rất hồi hộp, lo lắng khi chuẩn bị cho buổi phỏng vấn ReactJS sắp tới đúng không nào? Hiểu điều đó, mình có viết ra một vài ý, hi vọng bạn nắm được format một buổi phỏng vấn reactjs diễn ra như thế nào và hay hỏi những topic nào, từ đó giúp bạn cảm giác tự tin hơn khi đi phỏng vấn. 🙂
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 😉
 
 <!-- truncate-->
 
-![From unplash.com](https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80)
+### Mục lục
 
-**AGENGA:**
+### The standard Lorem Ipsum passage, used since the 1500s
 
-1. Một vài lưu ý chung
-2. Ôn tập kiến thức JS/ReactJS
-3. Cày thuật toán, giải thuật
-4. Tìm hiểu về công ty mà mình xin ứng tuyển
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-> Lưu ý:
->
-> - Tuỳ mỗi công ty có một style phỏng vấn khác nhau, nên các bạn chỉ tham khảo, đừng mặc định là công ty nào cũng làm giống như bài này chia sẻ nhé 😉
-> - Đây là chia sẻ chung cho tất cả level: từ junior tới senior. Tuỳ level mà các câu hỏi có thể có hay không, hoặc độ khó sẽ khác nhau.
+### Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 
----
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
 
-## Một vài lưu ý chung
+### 1914 translation by H. Rackham
+"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
 
-Một buổi phỏng vấn thường gồm các phần:
+### Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 
-- Làm quen, chào hỏi.
-- Tìm hiểu về kinh nghiệm làm việc ở các project trước đây, tập trung vào project gần nhất.
-- Giải quyết các tình huống đưa ra:
-  - Xử lý tình huống trong công việc.
-  - Xử lý bài toán coding về giải thuật.
-- Tìm hiểu về mong muốn, nguyện vọng của bạn
-- Đặt câu hỏi về công ty, dự án sắp tới sẽ làm nếu bạn được nhận.
+"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
 
----
+### 1914 translation by H. Rackham
 
-Lưu ý trước và trong buổi phỏng vấn:
+"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
 
-- **Ăn mặc:** gọn gàng là được, không cần phải thiệt là đẹp nè. Làm IT ko có nhu cầu đẹp hihi. Đơn giản quần jean, áo thun cũng được òi. Không nhất thiết phải là áo sơ mi mới được nhé. 😉
-- **Thời gian:** Nên đến trước giờ hẹn `10-15p`, đừng đến đúng giờ nhé. Vì tới nơi, các bạn có chút thời gian ngồi nghỉ xíu trước khi vào phỏng vấn nè. 😜 Nhưng cũng đừng tới sớm quá đáng, như sớm 30p chẳng hạn thì hơi lố 😅
-- **Liên lạc:** Nên xin `số điện thoại` để khi tới nơi không biết gì thì hỏi. Ví dụ như: chỗ để xe, đi tháng máy chỗ nào, lầu mấy, vân vân mây mây.
-- **Thái độ:** giữ cho mình cái mong muốn `sẵn sàng học hỏi, tìm tòi cái mới`, chứ đừng bảo thủ, em biết cái này, em chỉ làm cái này thôi, em không muốn tìm hiểu công nghệ mới thì dễ tạch nè.
-- **Thoải mái, tự nhiên:** cái này tuỳ tâm lý từng bạn, không dễ để có được trạng thái này. Cố gắng hít một hơi thât sâu rồi thở ra cho nhẹ người rồi `giữ bình tĩnh`. Tự nhiên nhất có thể nhé. Nếu cần nước cứ lịch sử xin một ly nước (nếu ko có) chứ đừng để khát khô cổ họng rồi không nói nổi nha hehee.
-- **Thẳng thắn chia sẻ:** một điều chắc chắn là bạn sẽ `không thể nào biết hết tất cả mọi thứ`, sẽ có những câu bạn không biết trả lời, `cứ thẳng thắn` nói là em chưa biết phần này, em sẽ tìm hiểu thêm ạ. Hoặc là em thấy rất hay và thú vị, nếu có cơ hội được làm việc thì em chắc chắn sẽ nghiên cứu thêm để học hỏi ạ. 😉
-- **Hiểu được mong muốn của bản thân:**
-  - Bạn mong muốn được làm gì ở công ty này?
-  - Bạn mong muốn được học hỏi công nghệ nào?
-  - Bạn dự định tương lai sẽ phát triển theo hướng nào: technical hay management.
-  - Bạn có kế hoạch gì cho riêng mình để hoàn thành mục tiêu đó hay không?
-    Đại loại nếu bạn không biết bạn muốn gì thì làm sao bạn biết bạn có phù hợp với công ty này hay không?
-
-## 1. Ôn tập kiến thức JS/ReactJS
-
-Phần này mục đích là để trả lời phần câu hỏi về kiến thức liên quan tới project gần nhất của bạn. Tuỳ bạn nói bạn biết gì mà sẽ bị hỏi liên quan tới những cái bạn biết hehee
-
-> TIP: Đừng chém gió phần bạn không biết, kẻo bị hỏi thêm là tạch 😉
-
-### HTML/CSS
-
-- Layout bằng flexbox, grid.
-- Hỏi về UI library bạn sử dụng: Bootstrap, Material Design, Ant Design.
-- Hỏi về cách bố trí layout.
-- Cho một phần giao diện nào đó, hỏi bạn làm thế nào để ra được như vậy (chỉ trình bày, ko code)
-- Hỏi về cách tổ chức styles trong project.
-- BEM là gì? Apply như thế nào?
-- SCSS: có gì vui với ông này, có những tính năng nào mà bạn đã sử dụng.
-- Specificity: độ cụ thể trong css
-- Làm sao customize được styles của một thư viện UI nào đó.
-- Reset CSS vs Normalize CSS
-- ...
-
-### JAVASCRIPT
-
-- "use strict"
-- var, const, let khác nhau ra sao?
-- Block scope với Function scope
-- Hoisting là gì? Cái này có thể bị hỏi dạng cho đoạn code rồi hỏi kết quả và giải thích.
-- Closure
-- Value type vs reference type
-- Bất đồng bộ trong javascript
-- setTimeout(), setInterval()
-- Callback
-- Promise
-- Module trong javascript: import, export, ...
-- ES6: arrow function, for...of, async for...of, async/await, ...
-- Cho các tình huống xử lý javascript, bạn vận dụng kiến thức để cung cấp giải pháp giải quyết nó.
-- ...
-
-### REACTJS
-
-- Component vs PureComponent
-- `Life cycle`: cái nào nên sử dụng cho mục đích nào (cái này mình có share trên kênh Youtube của mình)
-- Phân biệt `component state`, `Context API` và `Redux`: khi nào sử dụng cái nào và lý do.
-- **Refs trong reactjs**: bạn có dùng nó chưa và dùng cho việc gì? Hoặc ngược lại cho tình huống xài refs để giải quyết xem bạn có biết hay không ?
-- Routing thì có phần nested routing, nó là gì và khi nào cần nó.
-- Setup routing cho mấy trang cần phải log in như thế nào?
-- Form bạn dùng thư viện nào để quản lý: `Formik`, `Redux-Form`, `React-Hook-Form`. Mỗi cái sẽ có những vấn đề riêng có thể hỏi.
-- `Auth`: bạn handle phần authentication trong app như thế nào? Token, refresh token, expired token? ( nâng cao )
-- `React hooks`: bạn sử dụng hooks nào và cho mục đích gì?
-- `Custom hook`: bạn có tự viết một custom hook nào chưa, nếu có thì nó dùng để làm gì ?
-- Redux thì giờ có `Redux Toolkit` : nó là gì vậy ta ?
-- Quản lý state bên Facebook đang có thư viện mới là `Recoil`: bạn có nghe về nó không? bạn thấy thế nào? 🤣
-- Những thư viện bạn hay dùng trong reactjs project.
-- ...
-
-## 2. Cày thuật toán, giải thuật
-
-Cái này thì đa dạng lắm nên mình không biết sẽ bị hỏi về vấn đề gì nhen. Nên ôn luyện hết cho chắc 😉 Thường người ra đề sẽ cho một bài toán gì đó, mình tự phân tích và sử dụng thuật toán thích hợp để giải nó.
-
-- Tìm kiếm, sắp xếp đơn giản.
-- Tìm chuỗi con dài nhất, ngắn nhất và các biến thể của dạng này.
-- Đệ quy.
-- Tìm số bí ẩn trong mảng thoả điều kiện gì đó.
-- Đồ thị (cái này cũng ít bị hỏi)
-- Design pattern (Singleton, Observer, ...)
-- Cho đoạn code, hỏi kết quả và giải thích.
-- Quy hoạch động (cái này hơi nâng cao òi, chắc ít bị hỏi trừ khi công ty làm về thuật toán)
-- ... nói chung cái này tuỳ khả năng logic của các bạn đó 😉
-
-## 3. Tìm hiểu về công ty mà mình xin ứng tuyển
-
-**Tìm hiểu công ty:**
-
-- Công ty làm lĩnh vực gì?
-- Size bao nhiêu người?
-- Thành lập khi nào?
-- Những dự án công ty đã thực hiện.
-- Reviews về công ty.
-- ...
-
-**Hỏi về dự án bạn "sẽ" được nhận vào làm**
-
-- Dự án làm về cái gì?
-- Sử dụng công nghệ gì, techstack có những gì trong đó.
-- Có bao nhiêu người rồi, và bạn sẽ làm việc với ai?
-- Tính của team có vui vẻ, hoà đồng không?
-- ... nói chung bạn quan tâm gì về team của bạn sắp làm thì cứ hỏi hen hehee
-
----
-
-Hi vọng bài chia sẻ này hữu ích với mọi người! <br/>
-Chúc các bạn có một buổi phỏng vấn thành công tốt đẹp nhé! 🎉 <br/>
-
-> From Easy Frontend with ❤️

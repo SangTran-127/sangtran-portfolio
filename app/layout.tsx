@@ -1,7 +1,6 @@
 import Header from "@/components/header";
 import { Be_Vietnam_Pro } from "@next/font/google";
 import "@/styles/global.css";
-// import "@/styles/prism.css";
 import "@/sass/index.scss";
 import "animate.css";
 

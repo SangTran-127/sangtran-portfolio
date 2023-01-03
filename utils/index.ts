@@ -66,3 +66,16 @@ export async function getBlogBySlug(slug: string): Promise<Post | undefined> {
   const blogList = await getBlogList();
   return blogList.find((blog) => blog.slug === slug);
 }
+
+export function sortBlogByDate(blogList: Post[]): Post[] {
+  return blogList.sort(
+    (prevBlog, currentBlog) =>
+      new Date(currentBlog.publishedDate).getTime() -
+      new Date(prevBlog.publishedDate).getTime()
+  );
+}
+
+export async function getSortedBlogList(): Promise<Post[]> {
+  const blogList = await getBlogList();
+  return sortBlogByDate(blogList);
+}

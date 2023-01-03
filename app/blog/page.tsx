@@ -1,16 +1,11 @@
 import React from "react";
-import { getBlogList } from "@/utils";
+import { getSortedBlogList } from "@/utils";
 import Container from "@/components/layout/Container";
 import PostItem from "@/components/blog/PostItem";
-import { Seo } from "@/components";
 
-async function getBlogAPI() {
-  const blogList = await getBlogList();
-  return blogList;
-}
 
 export default async function BlogPage() {
-  const blogList = await getBlogAPI();
+  const blogList = await getSortedBlogList();
 
   return (
     <div className="text-dracula-light">

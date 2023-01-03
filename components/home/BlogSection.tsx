@@ -1,18 +1,14 @@
 import React from "react";
-import { getBlogList } from "@/utils";
+import { getSortedBlogList } from "@/utils";
 import Container from "../layout/Container";
 import BlogCard from "../blog/BlogCard";
 import Link from "next/link";
-interface BlogSectionProps {}
+interface BlogSectionProps { }
 
 export default async function BlogSection(props: BlogSectionProps) {
-  const blogList = await getBlogList();
-  const sectionList = blogList.sort(
-    (prevBlog, currentBlog) =>
-      new Date(currentBlog.publishedDate).getTime() -
-      new Date(prevBlog.publishedDate).getTime()
-  );
-  const [lastestBlog, ...restBlog] = sectionList;
+  const blogList = await getSortedBlogList();
+
+  const [lastestBlog, ...restBlog] = blogList;
   return (
     <Container tailWindClass="max-w-screen-lg mx-auto px-3">
       <>

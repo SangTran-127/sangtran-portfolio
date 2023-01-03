@@ -11,9 +11,8 @@ interface BlogCardProps {
 export default function BlogCard({ blog, lastest }: BlogCardProps) {
   return (
     <div
-      className={`flex ${
-        lastest ? "flex-col h-full border rounded-lg px-3 py-3" : ""
-      } gap-3 w-full `}
+      className={`flex ${lastest ? "flex-col h-full border rounded-lg px-3 py-3" : ""
+        } gap-3 w-full `}
     >
       <div className={`${lastest ? "" : "w-5/12"}`}>
         <Image
@@ -38,11 +37,10 @@ export default function BlogCard({ blog, lastest }: BlogCardProps) {
         </div>
         <Link href={`/blog/${blog.slug}`} legacyBehavior>
           <h5
-            className={`line-clamp-2 font-semibold text-dracula-orange cursor-pointer ${
-              lastest
-                ? "text-md mt-3"
-                : "text-xs md:text-lg lg:text-xl mt-1 md:mt-2"
-            }`}
+            className={`line-clamp-2 font-semibold text-dracula-orange cursor-pointer md:text-lg lg:text-xl ${lastest
+              ? "text-md mt-3"
+              : "text-xs mt-1 md:mt-2"
+              }`}
           >
             {blog.title}
           </h5>
