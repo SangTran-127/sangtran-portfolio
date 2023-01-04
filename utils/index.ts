@@ -12,7 +12,6 @@ import remarkParse from "remark-parse/lib";
 import remarkRehype from "remark-rehype";
 import remarkToc from "remark-toc";
 import { unified } from "unified";
-import remarkPrism from "remark-prism";
 import rehypeHighlight from "rehype-highlight";
 
 const BLOG_FOLDER = path.join(process.cwd(), "blogs_store");

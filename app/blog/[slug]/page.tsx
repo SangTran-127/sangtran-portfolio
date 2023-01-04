@@ -1,6 +1,5 @@
 import { Post } from "@/models";
 import { getBlogList, getMDToHTML } from "@/utils";
-import Script from "next/script";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";

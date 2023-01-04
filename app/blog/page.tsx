@@ -1,4 +1,3 @@
-import React from "react";
 import { getSortedBlogList } from "@/utils";
 import Container from "@/components/layout/Container";
 import PostItem from "@/components/blog/PostItem";
