@@ -3,9 +3,8 @@ import { getSortedBlogList } from "@/utils";
 import Container from "../layout/Container";
 import BlogCard from "../blog/BlogCard";
 import Link from "next/link";
-interface BlogSectionProps { }
 
-export default async function BlogSection(props: BlogSectionProps) {
+export default async function BlogSection() {
   const blogList = await getSortedBlogList();
 
   const [lastestBlog, ...restBlog] = blogList;
