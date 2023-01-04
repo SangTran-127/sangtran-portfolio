@@ -232,10 +232,10 @@ Kết quả:
 Cuối cùng chúng ta đã tìm hiểu được cách hoạt cũng như là cách sử dụng Streaming trong NextJS.
 Hi vọng bài chia sẻ này hữu ích với mọi người! 
 
+> Cheers 🍺
+ 
  **Nguồn tham khảo:**
  
 [Document NextJS](https://beta.nextjs.org/docs/data-fetching/streaming-and-suspense) - Vercel
 
 [React Streaming In Depth: NextJS! Remix! DIY!](https://www.youtube.com/watch?v=o3JWb04DRIs&t=205s) - Jack Herrington
-
-> Cheers 🍺

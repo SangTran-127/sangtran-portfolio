@@ -62,7 +62,7 @@ export default async function BlogDetail({ params }: PageProps) {
               </div>
             </div>
             <div
-              className="prose prose-strong:text-dracula-green prose-a:text-dracula-orange prose-code:text-dracula-purple prose-li:text-dracula-light prose-li::marker:text-color-purple"
+              className="prose prose-strong:text-dracula-green prose-a:text-dracula-orange prose-code:text-dracula-purple prose-li:text-dracula-light prose-li::marker:text-color-purple prose-a:no-underline"
               dangerouslySetInnerHTML={{ __html: post.htmlContent || "" }}
             ></div>
           </div>
