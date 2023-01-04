@@ -1,6 +1,6 @@
 ---
 slug: rush-b-redis-co-ban
-title: Rusb B Redis cơ bản 💥
+title: Rush B Redis cơ bản 💥
 author: Sáng Trần
 author_title: Regular guy who love programming
 author_url: https://github.com/SangTran-127
