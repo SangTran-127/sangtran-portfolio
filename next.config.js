@@ -4,6 +4,16 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     appDir: true,
+    // fontLoaders: [
+    //   {
+    //     loader: "@next/font/google/",
+    //     options: {
+    //       weight: ["400", "700"],
+    //       subsets: ["vietnamese"],
+    //       style: ["normal"],
+    //     },
+    //   },
+    // ],
   },
   images: {
     domains: [

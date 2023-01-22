@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import avatarUrl from "@/assests/images/waves.png";
+import avatarUrl from "@/assests/images/lap.png";
 import AnimatedLetter from "./AnimatedLetter";
 import Container from "../layout/Container";
 const HeroSection = () => {
@@ -63,11 +63,11 @@ const HeroSection = () => {
             <Image
               src={avatarUrl}
               alt="avatar"
-              style={{
-                boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
-                color: "#282A36",
-                borderRadius: "50%",
-              }}
+              // style={{
+              //   boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
+              //   color: "#282A36",
+              //   borderRadius: "50%",
+              // }}
               width="400"
             />
           </div>

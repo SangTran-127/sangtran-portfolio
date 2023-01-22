@@ -7,6 +7,7 @@ import "animate.css";
 const vietnamese = Be_Vietnam_Pro({
   weight: ["400", "700"],
   subsets: ["vietnamese"],
+  style: ["normal"],
 });
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -17,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={vietnamese.className}>
+      <head />
       <body className="bg-dracula-aro min-h-screen">
         <Header />
         <>{children}</>

@@ -10,7 +10,7 @@ tags: [nextjs, reactjs, "frontend"]
 date: "2023-01-03"
 ---
 
-NextJS 13 cùng với ReactJS 18 đã cho phép cơ chế data fetching mới là Streaming, bài viết sau đây sẽ đi vào trọng tâm của NextJS để biết được nó là gì? hoạt động như thế nào? thực hiện nó ra làm sao? 😊
+NextJS 13 cùng với ReactJS 18 đã cho phép cơ chế data fetching mới là Streaming, bài viết sau đây sẽ đi vào trọng tâm của NextJS để biết được nó là gì? hoạt động như thế nào? thực hiện nó làm sao? 😊
 
 <!-- truncate-->
 

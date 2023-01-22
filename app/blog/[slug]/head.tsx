@@ -9,6 +9,7 @@ interface HeaderProps {
 
 const Head = async ({ params }: HeaderProps) => {
   const blog = await getBlogBySlug(params.slug);
+  console.log(process.env.WEB_URL)
   return (
     <>
       <title>{blog?.title}</title>

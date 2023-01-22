@@ -16,7 +16,7 @@ export default function Head() {
         property="og:description"
         content={"This my portfolio, hope you find something interesting"}
       />
-      <meta property="og:image" content="" />
+      <meta property="og:image" content="https://res.cloudinary.com/sangtran127/image/upload/v1674398189/blog-assests/2j_cp134j.png" />
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={`${process.env.WEB_URL}` || ""} />
@@ -28,7 +28,7 @@ export default function Head() {
         property="twitter:description"
         content={"This my portfolio, hope you find something interesting"}
       />
-      <meta property="twitter:image" content="" />
+      <meta property="twitter:image" content="https://res.cloudinary.com/sangtran127/image/upload/v1674398189/blog-assests/2j_cp134j.png" />
     </head>
   );
 }

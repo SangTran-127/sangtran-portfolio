@@ -10,7 +10,7 @@ tags: [redis, backend]
 date: "2023-01-05"
 ---
 
-Bài blog hôm nay sẽ tìm hiểu qua khái niệm Redis, gói ghém lại các khái niệm cơ bản về Redis dành cho những người muốn tìm hiểu nhanh nó là gì? Sử dụng như thế nào 😉
+Bài blog hôm nay sẽ tìm hiểu qua khái niệm Redis, gói ghém lại các khái niệm cơ bản về Redis dành cho những người muốn tìm hiểu nhanh nó là gì? Sử dụng như thế nào
 
 <!-- truncate-->
 
