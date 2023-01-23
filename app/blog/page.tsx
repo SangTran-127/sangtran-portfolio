@@ -7,7 +7,7 @@ export default async function BlogPage() {
   const blogList = await getSortedBlogList();
 
   return (
-    <div className="text-dracula-light">
+    <div className="text-dracula-light my-14">
       <Container tailWindClass="md:px-20 lg:px-40 xl:px-60 2xl:px-80 px-5">
         <>
           <h1 className="text-center text-3xl my-3">Blog</h1>

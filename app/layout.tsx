@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import Footer from "@/components/footer/Footer";
 import { Be_Vietnam_Pro } from "@next/font/google";
 import "@/styles/global.css";
 import "@/sass/index.scss";
@@ -19,9 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={vietnamese.className}>
       <head />
-      <body className="bg-dracula-aro min-h-screen">
+      <body className="bg-dracula-aro">
+
         <Header />
-        <>{children}</>
+        <div>{children}</div>
+        <Footer />
+
       </body>
     </html>
   );

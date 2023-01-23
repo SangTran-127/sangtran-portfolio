@@ -1,6 +1,5 @@
 import { Post } from "@/models";
 import React from "react";
-// import Image from "next/image";
 import Image from "next/legacy/image";
 import Link from "next/link";
 interface BlogCardProps {
@@ -27,12 +26,18 @@ export default function BlogCard({ blog, lastest }: BlogCardProps) {
       <div className={`${lastest ? "" : "w-7/12"}`}>
         <div className="flex text-dracula-light">
           {blog.tagList.map((tag) => (
-            <p
-              key={tag}
-              className="bg-dracula-dark-800 hover:bg-dracula-dark-400  text-dracula-light text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-            >
-              {tag}
-            </p>
+            <div key={tag.name} className="flex items-center gap-2 bg-dracula-dark-800 hover:bg-dracula-dark-400  mr-2 px-2.5 py-0.5 rounded">
+              {
+                tag.path && <Image src={tag.path} alt={tag.name} style={{
+                  fill: tag.color
+                }} />
+              }
+              <p
+                className=" text-dracula-light text-xs font-semibold"
+              >
+                {tag.name}
+              </p>
+            </div>
           ))}
         </div>
         <Link href={`/blog/${blog.slug}`} legacyBehavior>

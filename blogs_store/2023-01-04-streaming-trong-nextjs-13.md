@@ -6,7 +6,8 @@ author_title: Regular guy who love programming
 author_url: https://github.com/SangTran-127
 author_image_url: https://avatars.githubusercontent.com/SangTran-127
 image: https://res.cloudinary.com/sangtran127/image/upload/v1672756828/blog-assests/streaming-03-01-2022/Ghi_Ma%CC%80n_hi%CC%80nh_2023-01-03_lu%CC%81c_21.30.05_gyoveo.gif
-tags: [nextjs, reactjs, "frontend"]
+type: "frontend"
+tags: [nextjs, reactjs]
 date: "2023-01-03"
 ---
 

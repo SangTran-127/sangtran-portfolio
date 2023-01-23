@@ -6,7 +6,8 @@ author_title: Regular guy who love programming
 author_url: https://github.com/SangTran-127
 author_image_url: https://avatars.githubusercontent.com/SangTran-127
 image: https://res.cloudinary.com/sangtran127/image/upload/v1672855292/blog-assests/redis-c%C6%A1-b%E1%BA%A3n-05-01-2022/redis_fzqo3g.png
-tags: [redis, backend]
+type: "backend"
+tags: [redis]
 date: "2023-01-05"
 ---
 

@@ -6,6 +6,7 @@ author_title: Regular guy who love programming
 author_url: https://github.com/SangTran-127
 author_image_url: https://avatars.githubusercontent.com/SangTran-127
 image: https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80
+type: "frontend"
 tags: [reactjs, roadmap]
 date: "2022-11-28"
 ---

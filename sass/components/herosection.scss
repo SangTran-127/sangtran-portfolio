@@ -8,7 +8,7 @@
 
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
-    animation-delay: 1s;
+    // animation-delay: 1s; tam tat
 
     .text-zone {
         position: relative;
@@ -45,10 +45,11 @@
         }
         &::before {
             content: "<title id='intro'>";
+            animation: fadeIn 1s 0.5s backwards;
         }
         &::after {
             content: "</title>";
-            animation: fadeIn 1s 1.7s backwards;
+            animation: fadeIn 1s 0.5s backwards;
         }
     }
     .logo-img {
@@ -61,7 +62,7 @@
 
     h2 {
         letter-spacing: 2px;
-        animation: fadeIn 1s 1.8s backwards;
+        animation: fadeIn 1s 1.3s backwards;
     }
 }
 

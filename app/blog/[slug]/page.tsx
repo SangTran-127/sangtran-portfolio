@@ -26,12 +26,18 @@ export default async function BlogDetail({ params }: PageProps) {
                 <h1 className="text-dracula-orange text-4xl">{post.title}</h1>
                 <div className="flex gap-2 mt-3">
                   {post.tagList.map((tag) => (
-                    <p
-                      key={tag}
-                      className="bg-dracula-dark-800 hover:bg-dracula-dark-400  text-dracula-light text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-                    >
-                      {tag}
-                    </p>
+                    <div key={tag.name} className="flex items-center gap-2 bg-dracula-dark-800 hover:bg-dracula-dark-400  mr-2 px-2.5 py-0.5 rounded">
+                      {
+                        tag.path && <Image src={tag.path} alt={tag.name} style={{
+                          fill: tag.color
+                        }} />
+                      }
+                      <p
+                        className=" text-dracula-light text-xs font-semibold"
+                      >
+                        {tag.name}
+                      </p>
+                    </div>
                   ))}
                 </div>
                 <div className="flex items-center mt-3">

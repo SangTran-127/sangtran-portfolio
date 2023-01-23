@@ -2,7 +2,7 @@
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
-import { Post } from "@/models";
+import { Post, Tag } from "@/models";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeDocument from "rehype-document";
 import rehypeFormat from "rehype-format";
@@ -13,6 +13,45 @@ import remarkRehype from "remark-rehype";
 import remarkToc from "remark-toc";
 import { unified } from "unified";
 import rehypeHighlight from "rehype-highlight";
+//icons
+import javascript from "@/assests/icons/dev/javascript.svg";
+import nextjs from "@/assests/icons/dev/nextdotjs.svg";
+import reactjs from "@/assests/icons/dev/react.svg";
+import redis from "@/assests/icons/dev/redis.svg";
+import typescript from "@/assests/icons/dev/typescript.svg";
+import nodejs from "@/assests/icons/dev/nodedotjs.svg";
+const devLanguages: Array<Tag> = [
+  {
+    name: "javascript",
+    path: javascript,
+    color: "#F7DF1E",
+  },
+  {
+    name: "reactjs",
+    path: reactjs,
+    color: "#61DAFB",
+  },
+  {
+    name: "redis",
+    path: redis,
+    color: "#DC382D",
+  },
+  {
+    name: "nextjs",
+    path: nextjs,
+    color: "#000000",
+  },
+  {
+    name: "nodejs",
+    path: nodejs,
+    color: "#339933",
+  },
+  {
+    name: "typescript",
+    path: typescript,
+    color: "#3178C6",
+  },
+];
 
 const BLOG_FOLDER = path.join(process.cwd(), "blogs_store");
 
@@ -36,7 +75,8 @@ export async function getBlogList(): Promise<Post[]> {
         profileUrl: data.author_url,
         avatarUrl: data.author_image_url,
       },
-      tagList: data.tags,
+      type: data.type,
+      tagList: data.tags.map((tag: string) => getDevLogoIcons(tag)),
       publishedDate: data.date,
       description: excerpt || "",
       mdContent: content,
@@ -77,4 +117,18 @@ export function sortBlogByDate(blogList: Post[]): Post[] {
 export async function getSortedBlogList(): Promise<Post[]> {
   const blogList = await getBlogList();
   return sortBlogByDate(blogList);
+}
+
+function getDevLogoIcons(name: string): Tag {
+  let tag = devLanguages.find(
+    (language) => language.name === name.toLowerCase()
+  );
+  if (!tag) {
+    return {
+      name,
+      path: undefined,
+      color: "",
+    };
+  }
+  return tag;
 }

@@ -6,7 +6,8 @@ author_title: Regular guy who love programming
 author_url: https://github.com/SangTran-127
 author_image_url: https://avatars.githubusercontent.com/SangTran-127
 image: https://res.cloudinary.com/sangtran127/image/upload/v1674398000/blog-assests/cache-voi-red%C3%AD-21-01-2022/gif_mhtd6n.gif
-tags: [redis, backend, nodejs]
+type: "backend"
+tags: [redis, nodejs]
 date: "2023-01-22"
 ---
 Nếu đã hiểu được Redis là gì, chúng ta cùng tìm hiểu thêm cách server sử dụng cache thông qua Redis như thế nào, cụ thể NodeJS 😉
