@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={vietnamese.className}>
+    <html lang="vi" className={vietnamese.className}>
       <head />
       <body className="bg-dracula-aro relative min-h-screen">
 
