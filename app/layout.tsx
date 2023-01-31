@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={vietnamese.className}>
       <head />
-      <body className="bg-dracula-aro">
+      <body className="bg-dracula-aro relative min-h-screen">
 
         <Header />
-        <div>{children}</div>
+        <div className="main-content">{children}</div>
         <Footer />
 
       </body>

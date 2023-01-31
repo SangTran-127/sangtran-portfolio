@@ -1,4 +1,6 @@
+import { NEXT_SEO_DEFAULT } from "@/next-seo.config";
 import { getBlogBySlug } from "@/utils";
+import { NextSeo, NextSeoProps } from "next-seo";
 import React from "react";
 
 interface HeaderProps {
@@ -9,30 +11,36 @@ interface HeaderProps {
 
 const Head = async ({ params }: HeaderProps) => {
   const blog = await getBlogBySlug(params.slug);
-  return (
-    <>
-      <title>{blog?.title}</title>
-      <meta name="title" content={blog?.title} />
-      <meta name="description" content={blog?.description} />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      {/* <!-- Open Graph / Facebook --> */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={`${process.env.WEB_URL}/blog` || ""} />
-      <meta property="og:title" content={blog?.title} />
-      <meta property="og:description" content={blog?.description} />
-      <meta property="og:image" content={blog?.thumbnailUrl} />
-
-      {/* <!-- Twitter --> */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta
-        property="twitter:url"
-        content={`${process.env.WEB_URL}/blog` || ""}
-      />
-      <meta property="twitter:title" content={blog?.title} />
-      <meta property="twitter:description" content={blog?.description} />
-      <meta property="twitter:image" content={blog?.thumbnailUrl} />
-    </>
-  );
+  const updatedMeta: NextSeoProps = {
+    ...NEXT_SEO_DEFAULT,
+    title: blog?.title,
+    description: blog?.description,
+    titleTemplate: '%s',
+    openGraph: {
+      url: `https://www.sangtran.dev/blog/${blog?.slug}`,
+      title: blog?.title,
+      description: blog?.description,
+      type: "article",
+      article: {
+        publishedTime: blog?.publishedDate,
+        section: blog?.title,
+        authors: [
+          blog?.author?.profileUrl as string
+        ],
+        tags: blog?.tagList.map((tag) => tag.name),
+      },
+      images: [
+        {
+          url: blog?.thumbnailUrl as string,
+          width: 800,
+          height: 600,
+          alt: blog?.thumbnailUrl as string,
+          type: 'image/jpeg',
+        }
+      ]
+    }
+  }
+  return <NextSeo {...updatedMeta} useAppDir={true} />
 };
 
 export default Head;

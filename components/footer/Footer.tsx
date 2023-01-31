@@ -26,7 +26,7 @@ export const socialLinks = [
 
 const Footer = () => {
     return (
-        <footer className="bg-dracula-darker-900 py-4 mt-10">
+        <footer className="bg-dracula-darker-900 py-4 mt-10 absolute bottom-0 w-full h-24">
             <div className="flex flex-col gap-2">
                 <div className="flex gap-10 justify-center">
                     {
