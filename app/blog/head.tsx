@@ -8,7 +8,13 @@ const Head = () => {
     description: "Welcome to Sang's blog page",
     titleTemplate: '%s'
   }
-  return <NextSeo {...updatedMeta} useAppDir={true} />
+  return (
+    <head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <NextSeo {...updatedMeta} useAppDir={true} />
+    </head>
+  )
 };
 
 export default Head;
