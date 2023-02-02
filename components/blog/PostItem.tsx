@@ -22,7 +22,7 @@ const PostItem = ({ post }: PostItemProps) => {
         <Link href={`/blog/${post.slug}`} legacyBehavior>
           <a className="text-dracula-orange text-xl">{post.title}</a>
         </Link>
-        <div className="flex items-center">
+        <div className="flex items-center my-1">
           <Link href={post.author?.profileUrl || "#"}>
             <div className="flex items-center gap-2">
               <Image

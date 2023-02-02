@@ -4,7 +4,7 @@ import React, { Suspense } from "react";
 import "@/sass/index.scss";
 const HomePage = () => {
   return (
-    <div>
+    <div className="mb-14 lg:mb-2">
       <HeroSection />
       <Suspense
         fallback={<div>Loading ...</div>}

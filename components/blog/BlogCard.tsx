@@ -50,7 +50,7 @@ export default function BlogCard({ blog, lastest }: BlogCardProps) {
             {blog.title}
           </h5>
         </Link>
-        <div className={`${lastest ? "mt-3" : "mt-2 md:mt-3"}`}>
+        <div className={`${lastest ? "mt-3" : "my-2 md:mt-3"}`}>
           <div>
             <Link href={blog.author?.profileUrl || "#"}>
               <div className={`flex items-center gap-3`}>

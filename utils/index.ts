@@ -20,7 +20,8 @@ import reactjs from "@/assests/icons/dev/react.svg";
 import redis from "@/assests/icons/dev/redis.svg";
 import typescript from "@/assests/icons/dev/typescript.svg";
 import nodejs from "@/assests/icons/dev/nodedotjs.svg";
-const devLanguages: Array<Tag> = [
+
+export const devLanguages: Array<Tag> = [
   {
     name: "javascript",
     path: javascript,
